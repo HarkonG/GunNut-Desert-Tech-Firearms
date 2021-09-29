@@ -49,7 +49,7 @@
   </ThingDef>
 
   <!--===== MDRX (Classic) =====-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_MDRX</defName>
     <label>DT MDRX</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
@@ -112,18 +112,15 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingCategories Inherit = "False">
-      <li>GunNut</li>
-    </thingCategories>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
 
   <!--===== MDRX (Gun Nut) =====-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_MDRX_C</defName>
-    <label>DT MDRX (Custom)</label>
+    <label>DT MDRX (custom)</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_MDRX_C</texPath>
@@ -132,7 +129,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>GN_Research</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -184,9 +181,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingCategories Inherit = "False">
-      <li>GunNut</li>
-    </thingCategories>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
@@ -196,7 +190,7 @@
   </ThingDef>
 
   <!--===== .308 MDRX (Classic) =====-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_308MDRX</defName>
     <label>DT .308 MDRX</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
@@ -259,18 +253,15 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingCategories Inherit = "False">
-      <li>GunNut</li>
-    </thingCategories>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
 
   <!--===== .308 MDRX (Gun Nut) =====-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_308MDRX_C</defName>
-    <label>DT .308 MDRX (Custom)</label>
+    <label>DT .308 MDRX (custom)</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_308MDRX_C</texPath>
@@ -279,7 +270,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>GN_Research</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
@@ -331,9 +322,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingCategories Inherit = "False">
-      <li>GunNut</li>
-    </thingCategories>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
@@ -343,7 +331,7 @@
   </ThingDef>
 
   <!--===== MDRX .300 BLK (MICRON) =====-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_MDRX_300M</defName>
     <label>DT MICRON MDRX</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
@@ -354,7 +342,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_SMG</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>GN_Research</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -406,9 +394,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingCategories Inherit = "False">
-      <li>GunNut</li>
-    </thingCategories>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
