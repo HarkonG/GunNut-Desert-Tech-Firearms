@@ -12,8 +12,8 @@
                     defName = "HRK_DTHTI" or
 					defName = "HRK_DTMDRX" or
 					defName = "HRK_DTMDRX_C" or
-                    defName = "HRK_DTMDRX308" or
-					defName = "HRK_DTMDRX308_C" or
+                    defName = "HRK_DT308MDRX" or
+					defName = "HRK_DT308MDRX_C" or
                     defName = "HRK_DTMicron"]/tools
                 </xpath>
                 <value>
@@ -193,7 +193,7 @@
 
             <!--===== HRK_308MDRX =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                <defName>HRK_308MDRX</defName>
+                <defName>HRK_DT308MDRX</defName>
                 <statBases>
                     <WorkToMake>36500</WorkToMake>
                     <SightsEfficiency>1.00</SightsEfficiency>
@@ -238,7 +238,7 @@
 
             <!--===== HRK_308MDRX_C =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                <defName>HRK_308MDRX_C</defName>
+                <defName>HRK_DT308MDRX_C</defName>
                 <statBases>
                     <WorkToMake>41000</WorkToMake>
                     <SightsEfficiency>2.24</SightsEfficiency>
