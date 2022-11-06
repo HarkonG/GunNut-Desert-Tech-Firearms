@@ -10,10 +10,10 @@
 				    /Defs/ThingDef[
                     defName = "HRK_DTSRS" or
                     defName = "HRK_DTHTI" or
-					defName = "HRK_MDRX" or
-					defName = "HRK_MDRX_C" or
-                    defName = "HRK_MDRX308" or
-					defName = "HRK_MDRX308_C" or
+					defName = "HRK_DTMDRX" or
+					defName = "HRK_DTMDRX_C" or
+                    defName = "HRK_DTMDRX308" or
+					defName = "HRK_DTMDRX308_C" or
                     defName = "HRK_DTMicron"]/tools
                 </xpath>
                 <value>
@@ -101,9 +101,9 @@
             </li>
 
 
-            <!--===== HRK_MDRX =====-->
+            <!--===== HRK_DTMDRX =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                <defName>HRK_MDRX</defName>
+                <defName>HRK_DTMDRX</defName>
                 <statBases>
                     <WorkToMake>36500</WorkToMake>
                     <SightsEfficiency>1.00</SightsEfficiency>
@@ -146,9 +146,9 @@
                 </weaponTags>
             </li>
 
-            <!--===== HRK_MDRX_C =====-->
+            <!--===== HRK_DTMDRX_C =====-->
             <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                <defName>HRK_MDRX_C</defName>
+                <defName>HRK_DTMDRX_C</defName>
                 <statBases>
                     <WorkToMake>38500</WorkToMake>
                     <SightsEfficiency>1.1</SightsEfficiency>

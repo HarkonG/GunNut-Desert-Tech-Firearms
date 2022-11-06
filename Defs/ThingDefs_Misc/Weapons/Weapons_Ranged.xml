@@ -87,13 +87,13 @@
     </weaponClasses>
     <weaponTags>
       <li>ShortShots</li>
-      <li>IndustrialGunAdvanced</li>
+      <li>IndustrialGunAdvanced</li>      
     </weaponTags>
   </ThingDef>
 
   <!--===== MDRX (Classic) =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_MDRX</defName>
+    <defName>HRK_Bullet_DTMDRX</defName>
     <label>DT MDRX bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -108,7 +108,7 @@
   </ThingDef>
 
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_MDRX</defName>
+    <defName>HRK_DTMDRX</defName>
     <label>DT MDRX</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
@@ -141,7 +141,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_MDRX</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_DTMDRX</defaultProjectile>
         <warmupTime>0.05</warmupTime>
         <range>31</range>
         <burstShotCount>3</burstShotCount>
@@ -172,12 +172,13 @@
     </tools>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
   </ThingDef>
 
   <!--===== MDRX (Gun Nut) =====-->
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_MDRX_C</defName>
+    <defName>HRK_DTMDRX_C</defName>
     <label>DT MDRX SD</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
@@ -210,7 +211,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_MDRX</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_DTMDRX</defaultProjectile>
         <warmupTime>0.05</warmupTime>
         <range>35</range>
         <burstShotCount>3</burstShotCount>
@@ -241,6 +242,7 @@
     </tools>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
     <equippedStatOffsets>
       <HuntingStealth>0.15</HuntingStealth>
@@ -249,7 +251,7 @@
 
   <!--===== .308 MDRX (Classic) =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_308MDRX</defName>
+    <defName>HRK_Bullet_DT308MDRX</defName>
     <label>DT MDRX .308 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -265,11 +267,11 @@
   </ThingDef>
 
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_308MDRX</defName>
+    <defName>HRK_DT308MDRX</defName>
     <label>DT MDRX .308</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTMDRX308/HRK_DTMDRX308_Black</texPath>
+      <texPath>Things/Weapons/HRK_DT308MDRX/HRK_DT308MDRX_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -298,7 +300,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_308MDRX</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_DT308MDRX</defaultProjectile>
         <warmupTime>0.05</warmupTime>
         <range>34</range>
         <burstShotCount>3</burstShotCount>
@@ -329,16 +331,17 @@
     </tools>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
   </ThingDef>
 
   <!--===== .308 MDRX (Gun Nut) =====-->
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_308MDRX_C</defName>
+    <defName>HRK_DT308MDRX_C</defName>
     <label>DT MDRX .308 SD</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTMDRX308_C/HRK_DTMDRX308_C_Black</texPath>
+      <texPath>Things/Weapons/HRK_DT308MDRX_C/HRK_DT308MDRX_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -367,7 +370,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_308MDRX</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_DT308MDRX</defaultProjectile>
         <warmupTime>0.05</warmupTime>
         <range>37</range>
         <burstShotCount>3</burstShotCount>
@@ -398,6 +401,7 @@
     </tools>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
     </weaponTags>
     <equippedStatOffsets>
       <HuntingStealth>0.15</HuntingStealth>
