@@ -108,7 +108,7 @@
 
                     <li Class="XmlExtensions.Setting.RadioButtons">
                         <key>DTSRS_Camo</key>
-                        <defaultValue>HRK_DTSRS_Black</defaultValue>
+                        <defaultValue>HRK_DTSRS_Tan</defaultValue>
                         <buttons>
                             <li>
                                 <value>HRK_DTSRS_Black</value>
@@ -125,7 +125,7 @@
                         </buttons>
                     </li>
 
-                    
+
                     <li Class="XmlExtensions.Setting.Text">
                         <text>DT HTI</text>
                         <font>Small</font>
@@ -232,7 +232,7 @@
 
                     <li Class="XmlExtensions.Setting.RadioButtons">
                         <key>DTMicron_Camo</key>
-                        <defaultValue>HRK_DTMicron_Black</defaultValue>
+                        <defaultValue>HRK_DTMicron_White</defaultValue>
                         <buttons>
                             <li>
                                 <value>HRK_DTMicron_Black</value>
