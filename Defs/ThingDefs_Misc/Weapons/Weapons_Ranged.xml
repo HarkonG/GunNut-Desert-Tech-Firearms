@@ -1,60 +1,113 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-  <!--===== 5.56 NATO =====-->
+
+  <!--===== DT MICRON =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_556NATO</defName>
-    <label>5.56 NATO bullet</label>
+    <defName>HRK_Bullet_DTMicron</defName>
+    <label>DT MICRON bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <speed>70</speed>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>80</speed>
     </projectile>
   </ThingDef>
 
-  <!--===== 7.62 NATO =====-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_762NATO</defName>
-    <label>7.62 NATO bullet</label>
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_DTMicron</defName>
+    <label>DT MICRON</label>
+    <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Weapons/HRK_DTMicron/HRK_DTMicron_White</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>12</damageAmountBase>
-      <speed>60</speed>
-      <armorPenetrationBase>0.2</armorPenetrationBase>
-    </projectile>
-  </ThingDef>
-
-  <!--===== .300 BLK =====-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_300Blackout</defName>
-    <label>.300 Blackout bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <speed>70</speed>
-      <armorPenetrationBase>0.2</armorPenetrationBase>
-    </projectile>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2.7</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>20</Chemfuel>
+      <Steel>50</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_DTMicron</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>HRK_Shot_DTMDRX</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
   </ThingDef>
 
   <!--===== MDRX (Classic) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_MDRX</defName>
+    <label>DT MDRX bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_MDRX</defName>
     <label>DT MDRX</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_MDRX</texPath>
+      <texPath>Things/Weapons/HRK_DTMDRX/HRK_DTMDRX_Tan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -83,12 +136,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_556NATO</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_MDRX</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>26</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>HRK_Shot_MDRX</soundCast>
+        <soundCast>HRK_Shot_DTMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -120,10 +173,10 @@
   <!--===== MDRX (Gun Nut) =====-->
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_MDRX_C</defName>
-    <label>DT MDRX (custom)</label>
+    <label>DT MDRX SD</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_MDRX_C</texPath>
+      <texPath>Things/Weapons/HRK_DTMDRX_C/HRK_DTMDRX_C_Tan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -152,12 +205,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_556NATO</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_MDRX</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>HRK_Shot_SDMDRX</soundCast>
+        <soundCast>HRK_Shot_DTSDMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -190,12 +243,27 @@
   </ThingDef>
 
   <!--===== .308 MDRX (Classic) =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_308MDRX</defName>
+    <label>DT MDRX .308 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_308MDRX</defName>
-    <label>DT .308 MDRX</label>
+    <label>DT MDRX .308</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_308MDRX</texPath>
+      <texPath>Things/Weapons/HRK_DTMDRX308/HRK_DTMDRX308_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -224,12 +292,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_762NATO</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_308MDRX</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <soundCast>HRK_Shot_MDRX</soundCast>
+        <soundCast>HRK_Shot_DTMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -261,10 +329,10 @@
   <!--===== .308 MDRX (Gun Nut) =====-->
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_308MDRX_C</defName>
-    <label>DT .308 MDRX (custom)</label>
+    <label>DT MDRX .308 SD</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_308MDRX_C</texPath>
+      <texPath>Things/Weapons/HRK_DTMDRX308_C/HRK_DTMDRX308_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -293,12 +361,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_762NATO</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_308MDRX</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>33</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <soundCast>HRK_Shot_SDMDRX</soundCast>
+        <soundCast>HRK_Shot_DTSDMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -330,13 +398,28 @@
     </equippedStatOffsets>
   </ThingDef>
 
-  <!--===== MDRX .300 BLK (MICRON) =====-->
-  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_MDRX_300M</defName>
-    <label>DT MICRON MDRX</label>
-    <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
+  <!--===== DT SRS =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_DTSRS</defName>
+    <label>DT SRS sniper bullet</label>
     <graphicData>
-      <texPath>Things/Weapons/HRK_MDRX_300M</texPath>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_DTSRS</defName>
+    <label>DT SRS</label>
+    <description>The Desert Tech Stealth Recon Scout (SRS) is a bolt-action sniper rifle developed by the firearm manufacturer Desert Tech. It is known for its bullpup design.</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_DTSRS/HRK_DTSRS_Tan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -365,12 +448,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_300Blackout</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_DTSRS</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>22</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>HRK_Shot_MDRX</soundCast>
+        <soundCast>HRK_Shot_DTSRS</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -394,9 +477,97 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+    <weaponTags Inherit="False">      <!-- make sure no other raiders wield this monstrum -->
+      <li>SniperRifle</li>
     </weaponTags>
+  </ThingDef>
+
+  <!--===== DT HTI =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_DTHTI</defName>
+    <label>DT HTI AM bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_DTHTI</defName>
+    <label>DT HTI</label>
+    <description>The Desert Tech Hard Target Interdiction (HTI) is a bullpup bolt-action sniper and anti-materiel rifle designed and manufactured by Desert Tech.</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_DTHTI/HRK_DTHTI_Black</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2.7</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Chemfuel>20</Chemfuel>
+      <Steel>50</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_DTHTI</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>HRK_Shot_DTHTI</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">      <!-- make sure no other raiders wield this monstrum -->
+      <li>SniperRifle</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>      <!-- drawback -->
+    </equippedStatOffsets>
   </ThingDef>
 
 </Defs>
