@@ -56,7 +56,7 @@
         <warmupTime>0.05</warmupTime>
         <range>25</range>
         <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
         <soundCast>HRK_Shot_DTMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -87,7 +87,7 @@
     </weaponClasses>
     <weaponTags>
       <li>ShortShots</li>
-      <li>IndustrialGunAdvanced</li>      
+      <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
 
@@ -304,7 +304,7 @@
         <warmupTime>0.05</warmupTime>
         <range>34</range>
         <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <soundCast>HRK_Shot_DTMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -374,7 +374,7 @@
         <warmupTime>0.05</warmupTime>
         <range>37</range>
         <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <soundCast>HRK_Shot_DTSDMDRX</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
