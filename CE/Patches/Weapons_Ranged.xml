@@ -76,7 +76,7 @@
                     <defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
                     <burstShotCount>6</burstShotCount>
                     <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-                    <warmupTime>0.9</warmupTime>
+                    <warmupTime>0.8</warmupTime>
                     <range>44</range>
                     <soundCast>HRK_Shot_DTMDRX</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
