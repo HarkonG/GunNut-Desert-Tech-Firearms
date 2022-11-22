@@ -4,7 +4,7 @@
     <XmlExtensions.SettingsMenuDef>
         <defName>HRK_settings_GunNutDesertTech</defName>
         <modId>Harkon.GunNut.DesertTech</modId>
-        <label>Gun Nut - Desert Tech Firearms</label>
+        <label>Gun Nut - Desert Tech</label>
         <settings>
 
             <li Class="XmlExtensions.Setting.Text">
