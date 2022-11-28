@@ -17,6 +17,19 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
+            <li>Combat Extended Armory</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_SRS"]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
             <li>Sam's Power Creep Armory!</li>
         </mods>
         <match Class="PatchOperationSequence">
@@ -27,4 +40,5 @@
             </operations>
         </match>
     </Operation>
+
 </Patch>
