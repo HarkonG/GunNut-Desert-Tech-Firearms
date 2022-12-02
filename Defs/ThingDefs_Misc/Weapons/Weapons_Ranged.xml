@@ -487,6 +487,7 @@
       </li>
     </tools>
     <weaponClasses>
+      <li>RangedHeavy</li>
       <li>LongShots</li>
     </weaponClasses>
     <weaponTags Inherit="False">      <!-- make sure no other raiders wield this monstrum -->
