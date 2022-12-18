@@ -2,43 +2,18 @@
 
 <Patch>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Advanced Industrial CE Guns Addon</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="Ex_SRS_gun"]</xpath>
-                </li>
-            </operations>
-        </match>
-    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <operations>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Combat Extended Armory</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="CE_Gun_SRS"]</xpath>
-                </li>
-            </operations>
-        </match>
-    </Operation>
+            <li Class="PatchOperationRemove" MayRequire="Samael.PCA">
+                <xpath>Defs/ThingDef[defName="PCA_Gun_SRS"]</xpath>
+            </li>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Sam's Power Creep Armory!</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="PCA_Gun_SRS"]</xpath>
-                </li>
-            </operations>
-        </match>
+            <li Class="PatchOperationRemove" MayRequire="al9000.ceadvancedindustrial">
+                <xpath>Defs/ThingDef[defName="Ex_SRS_gun"]</xpath>
+            </li>
+
+        </operations>
     </Operation>
 
 </Patch>
