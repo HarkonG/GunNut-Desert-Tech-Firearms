@@ -3,11 +3,7 @@
 <Patch>
 
     <Operation Class="PatchOperationSequence">
-        <operations>
-
-            <li Class="PatchOperationRemove" MayRequire="Samael.PCA">
-                <xpath>Defs/ThingDef[defName="PCA_Gun_SRS"]</xpath>
-            </li>
+        <operations>           
 
             <li Class="PatchOperationRemove" MayRequire="al9000.ceadvancedindustrial">
                 <xpath>Defs/ThingDef[defName="Ex_SRS_gun"]</xpath>
