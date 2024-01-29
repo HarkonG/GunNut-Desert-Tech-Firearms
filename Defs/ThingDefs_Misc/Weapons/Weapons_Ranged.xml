@@ -23,11 +23,12 @@
     <label>DT MICRON</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTMicron/HRK_DTMicron_White</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DTMicron/HRK_DTMicron_White</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_SMG</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DTMicron/HRK_DTMicron_White</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
@@ -112,11 +113,12 @@
     <label>DT MDRX</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTMDRX/HRK_DTMDRX_Tan</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DTMDRX/HRK_DTMDRX_Tan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DTMDRX/HRK_DTMDRX_Tan</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -182,11 +184,12 @@
     <label>DT MDRX SD</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTMDRX_C/HRK_DTMDRX_C_Tan</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DTMDRX_C/HRK_DTMDRX_C_Tan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DTMDRX_C/HRK_DTMDRX_C_Tan</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
@@ -271,11 +274,12 @@
     <label>DT MDRX .308</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DT308MDRX/HRK_DT308MDRX_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DT308MDRX/HRK_DT308MDRX_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DT308MDRX/HRK_DT308MDRX_Black</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -341,11 +345,12 @@
     <label>DT MDRX .308 SD</label>
     <description>The Desert Tech Micro Dynamic Rifle eXtreme (MDRX) is a multi caliber line of bullpup semi-automatic rifles, assault rifles and battle rifles designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DT308MDRX_C/HRK_DT308MDRX_C_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DT308MDRX_C/HRK_DT308MDRX_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DT308MDRX_C/HRK_DT308MDRX_C_Black</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
@@ -430,11 +435,12 @@
     <label>DT SRS</label>
     <description>The Desert Tech Stealth Recon Scout (SRS) is a bolt-action sniper rifle developed by the firearm manufacturer Desert Tech. It is known for its bullpup design.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTSRS/HRK_DTSRS_Tan</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DTSRS/HRK_DTSRS_Tan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DTSRS/HRK_DTSRS_Tan</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
@@ -517,12 +523,13 @@
     <label>DT HTI</label>
     <description>The Desert Tech Hard Target Interdiction (HTI) is a bullpup bolt-action sniper and anti-materiel rifle designed and manufactured by Desert Tech.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_DTHTI/HRK_DTHTI_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_DTHTI/HRK_DTHTI_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.25</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <uiIconPath>UI/Weapons/HRK_DTHTI/HRK_DTHTI_Black</uiIconPath>
     <recipeMaker>
       <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
